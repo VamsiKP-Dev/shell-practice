@@ -11,7 +11,7 @@ fi
 # echo "I am continuing..."
 
 echo "Installing MySQL"
-dnf install mylnfgh -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]; then
     echo "Installing MySQL is ... FAILED"
@@ -19,3 +19,4 @@ if [ $? -ne 0 ]; then
 else
     echo "Installing MySQL is SUCCESS"
 fi
+
